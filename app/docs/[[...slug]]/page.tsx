@@ -31,7 +31,10 @@ const CathAll = ({ params }: { params: { slug: string[] } }) => {
           {getData(params?.slug)}
         </>
       ) : (
-        <h1>This is by default home page</h1>
+        <h1>
+          This is Docs page, enter something in URL to proceed [...slug] /
+          catch-all
+        </h1>
       )}
     </div>
   );
