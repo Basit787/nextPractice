@@ -3,7 +3,7 @@ import React from "react";
 const CathAll = ({ params }: { params: { slug: string[] } }) => {
   const getData = (arrData: string[]) => {
     return arrData.map((data, index) => (
-      <h1>
+      <h1 key={index}>
         param : {index + 1} | data: {data}
       </h1>
     ));
